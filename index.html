@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Крестики-Нолики</title>
+		<link href="style.css" rel="stylesheet">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1>HTML-версия игры "Крестики-Нолики" на двоих игроков</h1>
+		<div class="signs">
+			<p style="margin-left:20px">Х - Крестик</p>
+			<p style="margin-left:20px">О - Нолик</p>
+			<p style="margin-left:20px"># - Свободная Ячейка</p>
+		</div>
+		<button  onclick="initGame()">Новая игра</button>
+		<table class="players">
+			<tr>
+				<th id="player_1">Игрок 1</th><th id="player_2">Игрок 2</th>
+			</tr>
+			<tr>
+				<td id="count_1">Счёт 1</td><td id="count_2">Счёт 2</td>
+			</tr>
+		</table>
+		<table class="gamefield">
+			<tr>
+				<td>Х</td>
+				<td>О</td>
+				<td class="td-outer">О</td>
+			</tr>
+			<tr>
+				<td>О</td>
+				<td>Х</td>
+				<td class="td-outer">О</td>
+			</tr>
+			<tr class="tr-outer">
+				<td>О</td>
+				<td>О</td>
+				<td class="td-outer">Х</td>
+			</tr>
+		</table>
+	</body>
+	<footer>
+		<p>Версия 1.0</p>
+	</footer>
+</html>
